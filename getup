@@ -33,6 +33,9 @@ local function getUp()
         animationTrack:AdjustSpeed(-1) -- Play the animation in reverse
 
         humanoid:ChangeState(Enum.HumanoidStateType.Jumping) -- Make the character jump
+
+        wait(1) -- Wait for 1 second
+        animationTrack:Stop() -- Stop the animation
     end
 end
 
